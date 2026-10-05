@@ -39,7 +39,7 @@ document.addEventListener('keydown', event => {
 document.addEventListener('click', event => {
   if (!event.target.closest('.header')) closeMenu();
 });
-window.matchMedia('(min-width: 861px)').addEventListener('change', event => {
+window.matchMedia('(min-width: 1201px)').addEventListener('change', event => {
   if (event.matches) closeMenu();
 });
 if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -55,3 +55,5 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
   document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
 }
 document.querySelector('#year').textContent = new Date().getFullYear();
+
+
